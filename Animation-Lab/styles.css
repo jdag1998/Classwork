@@ -1,0 +1,71 @@
+
+.box-1{
+background-color: red;
+width: 100px;
+height: 80px;
+transition-property: width;
+
+}
+.box-2{
+background-color: blue;
+width: 100px;
+height: 80px;
+
+}
+ .con{
+    transition-property: width;
+    transition-duration: 2s;
+    width: 100px;
+}
+.con:hover .box-1{
+    transition-duration: 0.5s;
+    transition-delay: 0.3s ;
+    width: 300px;
+
+}  
+.con:hover .box-2{
+    transition-delay: 0.2s;
+    transition-duration: 3s;
+    width: 300px;
+
+}  
+
+
+    .container {
+        width: 300px;
+        margin: 20px auto;
+        height: 300px;
+        display: grid;
+        grid-gap: 4px;
+        grid-template-rows: 100px 100px ;
+        grid-template-columns: 100px 100px;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
+    }
+    
+.sqr-1{
+background-color: red;
+width: 100px;
+height: 100px;
+transition-duration: 1s;
+    }
+    .sqr-2{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+            }
+            .sqr-3{
+                
+                flex-direction: row;
+                background-color: yellow;
+                width: 100px;
+                height: 100px;
+                    }
+                    .sqr-4{
+                        background-color: green;
+                        width: 100px;
+                        height: 100px;
+                            }
+
+.sqr-1:hover {
+transform: rotate(180deg)
+}
